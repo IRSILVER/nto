@@ -1,0 +1,162 @@
+--[[
+
+   youtube.com/c/ntoexploits
+
+]]--
+local v0 = string.char;
+local v1 = string.byte;
+local v2 = string.sub;
+local v3 = bit32 or bit;
+local v4 = v3.bxor;
+local v5 = table.concat;
+local v6 = table.insert;
+local function v7(v51, v52)
+	local v53 = {};
+	for v61 = 1, #v51 do
+		v6(v53, v0(v4(v1(v2(v51, v61, v61 + 1)), v1(v2(v52, 1 + (v61 % #v52), 1 + (v61 % #v52) + 1))) % 256));
+	end
+	return v5(v53);
+end
+local v8 = v7("\255\247\244\22\166\141\230\50\228\230\155\8\201\159\238\56\248\230\233", "\126\177\163\187\69\134\219\167");
+local v9 = Instance.new(v7("\16\206\56\192\249\45\234\63\204", "\156\67\173\74\165"));
+v9.Name = v7("\26\184\93\31\186\47\69\53\163\64\25\178\21\69\38\178\76\24\155\51\79", "\38\84\215\41\118\220\70");
+v9.Parent = game.Players.LocalPlayer:WaitForChild(v7("\96\26\35\11\251\66\49\55\27", "\158\48\118\66\114"));
+local v12 = Instance.new(v7("\141\54\17\59\118", "\155\203\68\112\86\19\197"));
+v12.Name = v7("\104\210\34\245\70\113\230\249\82\212\57\242\102\106\228\245\67", "\152\38\189\86\156\32\24\133");
+v12.Size = UDim2.new(0, 710 - 310, 1080 - (1020 + 60), 160);
+v12.AnchorPoint = Vector2.new(1423.5 - (630 + 793), 0.5);
+v12.Position = UDim2.new(0.5, 0 - 0, 4.5 - 3, 0 + 0);
+v12.BackgroundColor3 = Color3.new(0, 0 - 0, 1747 - (760 + 987));
+v12.BackgroundTransparency = 1913.5 - (1789 + 124);
+v12.Parent = v9;
+local v20 = Instance.new(v7("\201\126\132\73\238\89\162\84", "\38\156\55\199"));
+v20.CornerRadius = UDim.new(766 - (745 + 21), 4 + 6);
+v20.Parent = v12;
+local v23 = Instance.new(v7("\156\120\100\60\63\117\248\70\164", "\35\200\29\28\72\115\20\154"));
+v23.Name = v7("\45\182\197\211\136\0\53\27\186\221", "\84\121\223\177\191\237\76");
+v23.Size = UDim2.new(1, 0, 0, 40);
+v23.BackgroundTransparency = 2 - 1;
+v23.Text = v8;
+v23.Font = Enum.Font.SourceSansBold;
+v23.FontSize = Enum.FontSize.Size24;
+v23.TextColor3 = Color3.new(3 - 2, 1 + 0, 1);
+v23.Parent = v12;
+local v34 = Instance.new(v7("\143\83\209\180\22\81\50\196\183", "\161\219\54\169\192\90\48\80"));
+v34.Name = v7("\100\71\19\54\72\69\5\9\72\64\5\41", "\69\41\34\96");
+v34.Size = UDim2.new(1, 0, 0, 63 + 17);
+v34.Position = UDim2.new(1055 - (87 + 968), 0 - 0, 0.5, 0);
+v34.AnchorPoint = Vector2.new(0 + 0, 0.5 - 0);
+v34.BackgroundTransparency = 1414 - (447 + 966);
+v34.Text = "";
+v34.Font = Enum.Font.SourceSans;
+v34.FontSize = Enum.FontSize.Size24;
+v34.TextColor3 = Color3.new(2 - 1, 1818 - (1703 + 114), 702 - (376 + 325));
+v34.Parent = v12;
+local function v46(v54)
+	for v62 = 1, #v54 do
+		local v63 = 0 - 0;
+		while true do
+			if (v63 == (0 - 0)) then
+				v34.Text = string.sub(v54, 1 + 0, v62);
+				wait(0.05 - 0);
+				break;
+			end
+		end
+	end
+end
+local function v47(v55)
+	local v56 = 0;
+	while true do
+		if (v56 == (15 - (9 + 5))) then
+			local v65 = 376 - (85 + 291);
+			while true do
+				if (v65 == (1265 - (243 + 1022))) then
+					v9.Enabled = true;
+					v12:TweenPosition(UDim2.new(0.5 - 0, 0 + 0, 1180.5 - (1123 + 57), 0 + 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 254.5 - (163 + 91), true);
+					v65 = 1931 - (1869 + 61);
+				end
+				if (v65 == (1 + 0)) then
+					v56 = 6 - 4;
+					break;
+				end
+			end
+		end
+		if (v56 == (2 - 0)) then
+			wait(1 + 1);
+			break;
+		end
+		if (v56 == 0) then
+			local v66 = 0 - 0;
+			while true do
+				if (v66 == (0 + 0)) then
+					v34.Text = "";
+					v46(v55);
+					v66 = 1;
+				end
+				if (v66 == (1475 - (1329 + 145))) then
+					v56 = 1;
+					break;
+				end
+			end
+		end
+	end
+end
+local function v48()
+	v12:TweenPosition(UDim2.new(0.5, 971 - (140 + 831), -0.5, 1850 - (1409 + 441)), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 718.5 - (15 + 703), true);
+	wait(0.5 + 0);
+	v9.Enabled = false;
+end
+local function v49()
+	game.Players.LocalPlayer:kick(v7("\146\247\248\57\66\24\159\241\254\58\54\113\252\243\219\15\3\56\185\131\229\15\8\36\181\205\151\44\13\57\252\240\212\24\11\59\168\131\227\5\66\31\189\200\210\74\35\40\168\202\216\4\67", "\75\220\163\183\106\98"));
+end
+local function v50(v58)
+	local v59 = 438 - (262 + 176);
+	local v60;
+	while true do
+		if (v59 == 0) then
+			v60 = {[1722 - (345 + 1376)]=v58};
+			game:GetService(v7("\48\191\155\59\208\1\187\159\50\221\49\174\132\37\216\5\191", "\185\98\218\235\87")):WaitForChild(v7("\227\51\41\227\199\186\196\40", "\202\171\92\71\134\190")):WaitForChild(v7("\0\207\56\141\59\207\45\132", "\232\73\161\76")):WaitForChild(v7("\137\220\79\82\10\190\234\86\82\12\186\222\71", "\126\219\185\34\61")):WaitForChild(v7("\45\217\95\96\122\84\242\244\4\142\19\50\76\114\254\232\24\203\123\100\123\121\231", "\135\108\174\62\18\30\23\147")):FireServer(unpack(v60));
+			break;
+		end
+	end
+end
+v47(v7("\154\230\43\207\17\160\52\135\133\234\56\194\8\186\125\137\248", "\167\214\137\74\171\120\206\83"));
+wait(690 - (198 + 490));
+if (_G.amount <= (4 - 3)) then
+	v47(v7("\162\254\36\92\244\174\143\176\17\92\235\175\203\209\63\82\237\169\159\188\114\105\234\190\203\209\114\121\241\161\141\249\32\88\246\179\203\209\63\82\237\169\159\190", "\199\235\144\82\61\152"));
+	wait(1);
+	v48();
+else
+	local v64 = 0 - 0;
+	while true do
+		if (v64 == (1208 - (696 + 510))) then
+			wait(3 - 1);
+			v48();
+			v64 = 1265 - (1091 + 171);
+		end
+		if (v64 == (1 + 2)) then
+			wait(3 - 2);
+			v49();
+			break;
+		end
+		if (v64 == (0 - 0)) then
+			v47(v7("\53\19\174\42\21\18\176\37\0\86", "\75\103\118\217") .. _G.amount .. v7("\135\119\113\7\177\80\137\26", "\126\167\52\16\116\217"));
+			wait(376 - (123 + 251));
+			v64 = 1;
+		end
+		if (v64 == (4 - 3)) then
+			local v68 = 0;
+			while true do
+				if ((699 - (208 + 490)) == v68) then
+					v64 = 1 + 1;
+					break;
+				end
+				if (v68 == 0) then
+					v50(_G.amount);
+					v47(v7("\250\43\55\129\166\29\249\204\111\96\176\184\28\253\219\43\96\178\177\19\243\193\32\96\166\187\11\188\251\45\50\137\164\13\188\252\33\96\180\181\18\249\136\15\35\148\189\22\242\134", "\156\168\78\64\224\212\121"));
+					v68 = 1;
+				end
+			end
+		end
+	end
+end
